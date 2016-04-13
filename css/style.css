@@ -26,6 +26,7 @@ a:hover{
 	text-align: justify;
 }
 
+
 .bold{
 	font-weight:bold;
 }
@@ -37,4 +38,23 @@ a:hover{
 }
 .strikethrough{
 	text-decoration: line-through;
+}
+
+
+.upper{
+	text-transform: uppercase;
+}
+.lower {
+    text-transform: lowercase;
+}
+.capitalize{
+	text-transform: capitalize;
+}
+
+
+.less {
+    font-size: smaller;
+}
+.plus{
+	font-size:larger;
 }

@@ -13,15 +13,10 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="font-awesome-4.6.1/css/font-awesome.min.css" type="text/css">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 
-
-	 <style>
-       
-    </style>
 </head>
 <body>
 
@@ -29,7 +24,7 @@
 
 		<div style="padding:40px;"></div>
 
-		<textarea  class="form-control" rows="5"  ng-class="{left: Left, center: Center, right: Right, justify:Justify, bold: Bold, italic: Italic, strikethrough: Strikethrough, underline:Underline}" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl dui, nec volutpat erat congue vitae. Duis vehicula mattis hendrerit. Fusce pretium bibendum dui, ac mollis tortor tempor ac. Phasellus et ex eu ante aliquam posuere. Suspendisse non finibus lacus. Suspendisse consequat dapibus leo quis aliquam. Nunc ac odio quam. Maecenas volutpat laoreet dolor quis egestas. Nulla lobortis pharetra vehicula. Nam eget nulla placerat felis hendrerit rutrum. Vestibulum venenatis ullamcorper turpis sollicitudin blandit. Vivamus blandit tellus eu rutrum fermentum. Cras malesuada sagittis ex, porta maximus neque finibus non. Cras nisi sem, rutrum vitae ligula vitae, pharetra vulputate felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed id gravida est.</textarea>
+		<textarea  class="form-control" rows="5"  ng-class="{left: Left, center: Center, right: Right, justify:Justify, bold: Bold, italic: Italic, strikethrough: Strikethrough, underline:Underline, upper: Upper, lower: Lower, capitalize: Capitalize, less: Less, plus: Plus}" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl dui, nec volutpat erat congue vitae. Duis vehicula mattis hendrerit. Fusce pretium bibendum dui, ac mollis tortor tempor ac. Phasellus et ex eu ante aliquam posuere. Suspendisse non finibus lacus. Suspendisse consequat dapibus leo quis aliquam. Nunc ac odio quam. Maecenas volutpat laoreet dolor quis egestas. Nulla lobortis pharetra vehicula. Nam eget nulla placerat felis hendrerit rutrum. Vestibulum venenatis ullamcorper turpis sollicitudin blandit. Vivamus blandit tellus eu rutrum fermentum. Cras malesuada sagittis ex, porta maximus neque finibus non. Cras nisi sem, rutrum vitae ligula vitae, pharetra vulputate felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed id gravida est.</textarea>
 
 
 		<div style="padding: 100px;">	
@@ -37,29 +32,29 @@
         	<ul class="list-inline text-center"   >
 	            <li>
 		            <label class="radio-inline">
-			            <input type="radio" name="align" style="display:block;" value="left" ng-model="Left" ng-change="Left">
-			            <i class="fa fa-3x fa-align-left"></i>
+			            <input type="radio" name="align" style="display:none;" value="left" ng-model="Left">
+			            <i class="fa fa-3x fa-align-left" title="Left"></i>
 			        </label>
 		        </li> 
 
 		        <li>
 			        <label class="radio-inline">
-			            <input type="radio" name="align" style="display:block;"  value="center" ng-model="Center">
-			            <i class="fa fa-3x fa-align-center"></i>
+			            <input type="radio" name="align" style="display:none;"  value="center" ng-model="Center">
+			            <i class="fa fa-3x fa-align-center" title="Center"></i>
 			        </label>
 		        </li> 
 
 		        <li>
 			        <label class="radio-inline">
-			            <input type="radio" name="align" style="display:block;" value="right" ng-model="Right" >
-			            <i class="fa fa-3x fa-align-right"></i>
+			            <input type="radio" name="align" style="display:none;" value="right" ng-model="Right" >
+			            <i class="fa fa-3x fa-align-right" title="Right"></i>
 			        </label>
 		        </li> 
 
 		        <li>
 		            <label class="radio-inline">
-			            <input type="radio" name="align" style="display:block;" value="justify" ng-model="Justify" >
-			            <i class="fa fa-3x fa-align-justify"></i>
+			            <input type="radio" name="align" style="display:none;" value="justify" ng-model="Justify" >
+			            <i class="fa fa-3x fa-align-justify" title="Justify"></i>
 			        </label>
 		        </li> 
         	</ul>
@@ -68,31 +63,75 @@
 	            <li>
 		            <label class="checkbox-inline">
 			            <input type="checkbox" style="display:none;"  ng-model="Bold">
-			            <i class="fa fa-3x fa-bold"></i>
+			            <i class="fa fa-3x fa-bold" title="Bold"></i>
 			        </label>
 		        </li> 
 
 		        <li>
 			        <label class="checkbox-inline">
 			            <input type="checkbox" style="display:none;"  ng-model="Italic">
-			            <i class="fa fa-3x fa-italic"></i>
+			            <i class="fa fa-3x fa-italic" title="Italic"></i>
 			        </label>
 		        </li> 
 
 		        <li>
 			        <label class="checkbox-inline">
 			            <input type="checkbox" style="display:none;"  ng-model="Strikethrough">
-			            <i class="fa fa-3x fa-strikethrough"></i>
+			            <i class="fa fa-3x fa-strikethrough" title="Strikethrough"></i>
 			        </label>
 		        </li> 
 
 		        <li>
 		            <label class="checkbox-inline">
 			            <input type="checkbox" style="display:none;"  ng-model="Underline">
-			            <i class="fa fa-3x fa-underline"></i>
+			            <i class="fa fa-3x fa-underline"  title="Underline"></i>
 			        </label>
 		        </li> 
         	</ul>
+
+        	<ul class="list-inline text-center"   >
+	            <li>
+		            <label class="radio-inline">
+			            <input type="radio" name="case" style="display:none;" value="upper" ng-model="Upper">
+			            <i class="fa fa-3x fa-font"  title="Upper Case"></i>
+			        </label>
+		        </li> 
+
+		        <li>
+			        <label class="radio-inline">
+			            <input type="radio" name="case" style="display:none;"  value="lower" ng-model="Lower">
+			            <i class="fa fa-3x  fa-sort-alpha-asc" title="Lower Case"></i>
+			        </label>
+		        </li> 
+
+		        <li>
+			        <label class="radio-inline">
+			            <input type="radio" name="case" style="display:none;" value="capitalize" ng-model="Capitalize" >
+			            <i class="fa fa-3x fa-sort" title="Upper Lower"></i>
+			        </label>
+		        </li> 
+
+        	</ul>
+
+
+        	<ul class="list-inline text-center"   >
+	            <li>
+		            <label class="radio-inline">
+			            <input type="radio" name="case" style="display:none;" value="less" ng-model="Less">
+			            <i class="fa fa-3x fa-minus"  title="Less Font Size"></i>
+			        </label>
+		        </li> 
+
+		        <li>
+			        <label class="radio-inline">
+			            <input type="radio" name="case" style="display:none;"  value="plus" ng-model="Plus">
+			            <i class="fa fa-3x  fa-plus" title="Plus Font Size"></i>
+			        </label>
+		        </li> 
+
+        	</ul>
+
+
 
 		</div>
 		
