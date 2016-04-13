@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Angular - Shaw and Partners</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="font-awesome-4.6.1/css/font-awesome.min.css" type="text/css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+
+	 <style>
+       
+    </style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div style="padding:40px;"></div>
+
+		<textarea  class="form-control" rows="5"  ng-class="{left: Left, center: Center, right: Right, justify:Justify, bold: Bold, italic: Italic, strikethrough: Strikethrough, underline:Underline}" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum nisl dui, nec volutpat erat congue vitae. Duis vehicula mattis hendrerit. Fusce pretium bibendum dui, ac mollis tortor tempor ac. Phasellus et ex eu ante aliquam posuere. Suspendisse non finibus lacus. Suspendisse consequat dapibus leo quis aliquam. Nunc ac odio quam. Maecenas volutpat laoreet dolor quis egestas. Nulla lobortis pharetra vehicula. Nam eget nulla placerat felis hendrerit rutrum. Vestibulum venenatis ullamcorper turpis sollicitudin blandit. Vivamus blandit tellus eu rutrum fermentum. Cras malesuada sagittis ex, porta maximus neque finibus non. Cras nisi sem, rutrum vitae ligula vitae, pharetra vulputate felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed id gravida est.</textarea>
+
+
+		<div style="padding: 100px;">	
+				
+        	<ul class="list-inline text-center"   >
+	            <li>
+		            <label class="radio-inline">
+			            <input type="radio" name="align" style="display:block;" value="left" ng-model="Left" ng-change="Left">
+			            <i class="fa fa-3x fa-align-left"></i>
+			        </label>
+		        </li> 
+
+		        <li>
+			        <label class="radio-inline">
+			            <input type="radio" name="align" style="display:block;"  value="center" ng-model="Center">
+			            <i class="fa fa-3x fa-align-center"></i>
+			        </label>
+		        </li> 
+
+		        <li>
+			        <label class="radio-inline">
+			            <input type="radio" name="align" style="display:block;" value="right" ng-model="Right" >
+			            <i class="fa fa-3x fa-align-right"></i>
+			        </label>
+		        </li> 
+
+		        <li>
+		            <label class="radio-inline">
+			            <input type="radio" name="align" style="display:block;" value="justify" ng-model="Justify" >
+			            <i class="fa fa-3x fa-align-justify"></i>
+			        </label>
+		        </li> 
+        	</ul>
+
+        	<ul class="list-inline text-center"  >
+	            <li>
+		            <label class="checkbox-inline">
+			            <input type="checkbox" style="display:none;"  ng-model="Bold">
+			            <i class="fa fa-3x fa-bold"></i>
+			        </label>
+		        </li> 
+
+		        <li>
+			        <label class="checkbox-inline">
+			            <input type="checkbox" style="display:none;"  ng-model="Italic">
+			            <i class="fa fa-3x fa-italic"></i>
+			        </label>
+		        </li> 
+
+		        <li>
+			        <label class="checkbox-inline">
+			            <input type="checkbox" style="display:none;"  ng-model="Strikethrough">
+			            <i class="fa fa-3x fa-strikethrough"></i>
+			        </label>
+		        </li> 
+
+		        <li>
+		            <label class="checkbox-inline">
+			            <input type="checkbox" style="display:none;"  ng-model="Underline">
+			            <i class="fa fa-3x fa-underline"></i>
+			        </label>
+		        </li> 
+        	</ul>
+
+		</div>
+		
+	</div>
+
+   
+</body>
+</html>
+

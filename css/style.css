@@ -1,0 +1,40 @@
+a:hover{
+	text-decoration:none !important;
+	list-style: none;
+	color: #4F4F4F;
+}
+
+.icons{
+	color: #363636;
+}
+
+.left{
+	text-decoration: none;
+	text-align: left;
+
+}
+.center{
+	clear: both;
+    text-align: center;
+}
+.right{
+	clear: both;
+	text-align: right;
+}
+.justify{
+	clear: both;
+	text-align: justify;
+}
+
+.bold{
+	font-weight:bold;
+}
+.italic {
+    font-style:italic;
+}
+.underline{
+	text-decoration: underline;
+}
+.strikethrough{
+	text-decoration: line-through;
+}
